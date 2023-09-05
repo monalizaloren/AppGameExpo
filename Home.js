@@ -4,7 +4,7 @@
 import React from 'react';
 import { View, Text, FlatList, TouchableOpacity, StyleSheet } from 'react-native';
 
-const filmesEmDestaque = [
+const Jogosemdestaque = [
   { id: '1', title: 'Harry Potter', description: 'Aventura mágica em Hogwarts' },
 { id: '2', title: '???', description: '???' },
   { id: '3', title: '??', description: '???' },
@@ -30,7 +30,7 @@ const HomeScreen = ({ navigation }) => {
     <View style={styles.container}>
       <Text style={styles.header}>Filmes em Destaque</Text>
       <FlatList
-        data={filmesEmDestaque}
+        data={Jogosemdestaque}
         renderItem={renderFilmeItem}
         keyExtractor={(item) => item.id}
         contentContainerStyle={styles.flatListContent}
